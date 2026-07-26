@@ -33,7 +33,7 @@ body.admin-page {
     overflow-x: hidden;
 }
 
-/* ── Canvas BG ── */
+
 #bg-canvas {
     position: fixed;
     inset: 0;
