@@ -1,0 +1,187 @@
+/* ========================================
+   EDIT CV PAGE — CYBERPUNK THEME
+   ======================================== */
+.edit-page {
+    min-height: 100vh;
+    background: var(--bg, #080b14);
+    padding: 24px 20px 80px;
+}
+
+.edit-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(10, 15, 30, 0.92);
+    border: 1px solid rgba(0, 255, 136, 0.15);
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(24px);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.7), 0 0 40px rgba(0,255,136,0.04);
+}
+
+.edit-container .edit-header {
+    margin-bottom: 28px;
+}
+
+.edit-container .edit-header h1 {
+    margin: 0 0 6px;
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(135deg, #ffffff, var(--neon-green, #00ff88));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.edit-container .edit-header .subtitle {
+    color: var(--text-secondary, #8899cc);
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.88rem;
+}
+
+/* Form */
+.edit-container .form-group {
+    margin-bottom: 20px;
+}
+
+.edit-container .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-secondary, #8899cc);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.edit-container .form-group .hint {
+    color: var(--muted, #4a5580);
+    font-size: 0.78rem;
+    margin-top: 4px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.edit-container .form-control {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(0, 255, 136, 0.03);
+    border: 1px solid rgba(0, 255, 136, 0.12);
+    border-radius: 8px;
+    color: var(--text, #e8ecf8);
+    font-size: 0.92rem;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.edit-container .form-control:focus {
+    outline: none;
+    border-color: rgba(0, 255, 136, 0.5);
+    background: rgba(0, 255, 136, 0.05);
+    box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.08), 0 0 20px rgba(0,255,136,0.05);
+}
+
+.edit-container .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.edit-container textarea.form-control {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.edit-container .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Photo upload */
+.edit-container .current-photo {
+    max-width: 120px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    margin-top: 8px;
+}
+
+.edit-container .preview-photo {
+    max-width: 150px;
+    border-radius: 16px;
+    margin-top: 8px;
+    border: 2px solid var(--accent);
+    display: none;
+}
+
+.edit-container .file-input-wrapper input[type="file"] {
+    padding: 10px;
+    color: var(--text);
+}
+
+.edit-container .file-input-wrapper input[type="file"]::file-selector-button {
+    padding: 8px 16px;
+    background: rgba(0, 255, 136, 0.1);
+    border: 1px solid rgba(0, 255, 136, 0.25);
+    border-radius: 6px;
+    color: var(--neon-green, #00ff88);
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: all 0.2s;
+}
+
+.edit-container .file-input-wrapper input[type="file"]::file-selector-button:hover {
+    background: rgba(0, 255, 136, 0.2);
+}
+
+/* Buttons */
+.edit-container .form-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.edit-container .btn {
+    padding: 11px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.04em;
+}
+
+.edit-container .btn:hover {
+    transform: translateY(-2px);
+}
+
+.edit-container .btn-primary {
+    background: linear-gradient(135deg, rgba(0,255,136,0.15), rgba(0,200,255,0.15));
+    color: var(--neon-green, #00ff88);
+    border: 1px solid rgba(0, 255, 136, 0.35);
+    box-shadow: 0 0 20px rgba(0,255,136,0.08);
+}
+
+.edit-container .btn-primary:hover {
+    box-shadow: 0 0 35px rgba(0,255,136,0.2), 0 8px 25px rgba(0,0,0,0.3);
+    border-color: rgba(0, 255, 136, 0.6);
+}
+
+.edit-container .btn-secondary {
+    background: transparent;
+    color: var(--text-secondary, #8899cc);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.edit-container .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text, #e8ecf8);
+}
